@@ -15,7 +15,9 @@
 		3FC3224A13C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3224913C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m */; };
 		3FC3224D13C0ED2300F0AA51 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3224B13C0ED2300F0AA51 /* MainWindow.xib */; };
 		3FC3225013C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3224F13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m */; };
-		3FC3225313C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3225113C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib */; };
+		3FC3226313C0EE1B00F0AA51 /* MMCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3226213C0EE1B00F0AA51 /* MMCurrencyTextField.m */; };
+		3FC3226613C0EE4700F0AA51 /* MMCurrencyTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3226513C0EE4700F0AA51 /* MMCurrencyTextFieldDelegate.m */; };
+		3FC3226813C0EEC300F0AA51 /* UICurrencyTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3226713C0EEC300F0AA51 /* UICurrencyTextFieldViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,20 @@
 		3FC3223913C0ED2300F0AA51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FC3223B13C0ED2300F0AA51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FC3223D13C0ED2300F0AA51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3FC3224113C0ED2300F0AA51 /* UICurrencyTextField-Info.plist */ = {isa = PBXFileReference; path = "UICurrencyTextField-Info.plist"; sourceTree = "<group>"; };
+		3FC3224113C0ED2300F0AA51 /* UICurrencyTextField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UICurrencyTextField-Info.plist"; sourceTree = "<group>"; };
 		3FC3224313C0ED2300F0AA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3FC3224513C0ED2300F0AA51 /* UICurrencyTextField-Prefix.pch */ = {isa = PBXFileReference; path = "UICurrencyTextField-Prefix.pch"; sourceTree = "<group>"; };
+		3FC3224513C0ED2300F0AA51 /* UICurrencyTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICurrencyTextField-Prefix.pch"; sourceTree = "<group>"; };
 		3FC3224613C0ED2300F0AA51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3FC3224813C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.h */ = {isa = PBXFileReference; path = UICurrencyTextFieldAppDelegate.h; sourceTree = "<group>"; };
+		3FC3224813C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICurrencyTextFieldAppDelegate.h; sourceTree = "<group>"; };
 		3FC3224913C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICurrencyTextFieldAppDelegate.m; sourceTree = "<group>"; };
 		3FC3224C13C0ED2300F0AA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		3FC3224E13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.h */ = {isa = PBXFileReference; path = UICurrencyTextFieldViewController.h; sourceTree = "<group>"; };
+		3FC3224E13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICurrencyTextFieldViewController.h; sourceTree = "<group>"; };
 		3FC3224F13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICurrencyTextFieldViewController.m; sourceTree = "<group>"; };
-		3FC3225213C0ED2300F0AA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UICurrencyTextFieldViewController.xib; sourceTree = "<group>"; };
+		3FC3226113C0EE1B00F0AA51 /* MMCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCurrencyTextField.h; sourceTree = "<group>"; };
+		3FC3226213C0EE1B00F0AA51 /* MMCurrencyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCurrencyTextField.m; sourceTree = "<group>"; };
+		3FC3226413C0EE4700F0AA51 /* MMCurrencyTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCurrencyTextFieldDelegate.h; sourceTree = "<group>"; };
+		3FC3226513C0EE4700F0AA51 /* MMCurrencyTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCurrencyTextFieldDelegate.m; sourceTree = "<group>"; };
+		3FC3226713C0EEC300F0AA51 /* UICurrencyTextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UICurrencyTextFieldViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,16 @@
 		3FC3223F13C0ED2300F0AA51 /* UICurrencyTextField */ = {
 			isa = PBXGroup;
 			children = (
+				3FC3226413C0EE4700F0AA51 /* MMCurrencyTextFieldDelegate.h */,
+				3FC3226513C0EE4700F0AA51 /* MMCurrencyTextFieldDelegate.m */,
+				3FC3226113C0EE1B00F0AA51 /* MMCurrencyTextField.h */,
+				3FC3226213C0EE1B00F0AA51 /* MMCurrencyTextField.m */,
 				3FC3224813C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.h */,
 				3FC3224913C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m */,
 				3FC3224B13C0ED2300F0AA51 /* MainWindow.xib */,
 				3FC3224E13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.h */,
 				3FC3224F13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m */,
-				3FC3225113C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib */,
+				3FC3226713C0EEC300F0AA51 /* UICurrencyTextFieldViewController.xib */,
 				3FC3224013C0ED2300F0AA51 /* Supporting Files */,
 			);
 			path = UICurrencyTextField;
@@ -150,7 +160,7 @@
 			files = (
 				3FC3224413C0ED2300F0AA51 /* InfoPlist.strings in Resources */,
 				3FC3224D13C0ED2300F0AA51 /* MainWindow.xib in Resources */,
-				3FC3225313C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib in Resources */,
+				3FC3226813C0EEC300F0AA51 /* UICurrencyTextFieldViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +174,8 @@
 				3FC3224713C0ED2300F0AA51 /* main.m in Sources */,
 				3FC3224A13C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m in Sources */,
 				3FC3225013C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m in Sources */,
+				3FC3226313C0EE1B00F0AA51 /* MMCurrencyTextField.m in Sources */,
+				3FC3226613C0EE4700F0AA51 /* MMCurrencyTextFieldDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,14 +196,6 @@
 				3FC3224C13C0ED2300F0AA51 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		3FC3225113C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FC3225213C0ED2300F0AA51 /* en */,
-			);
-			name = UICurrencyTextFieldViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -241,6 +245,7 @@
 				GCC_PREFIX_HEADER = "UICurrencyTextField/UICurrencyTextField-Prefix.pch";
 				INFOPLIST_FILE = "UICurrencyTextField/UICurrencyTextField-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,6 +259,7 @@
 				GCC_PREFIX_HEADER = "UICurrencyTextField/UICurrencyTextField-Prefix.pch";
 				INFOPLIST_FILE = "UICurrencyTextField/UICurrencyTextField-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
