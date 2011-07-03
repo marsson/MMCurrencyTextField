@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FC3223A13C0ED2300F0AA51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC3223913C0ED2300F0AA51 /* UIKit.framework */; };
+		3FC3223C13C0ED2300F0AA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC3223B13C0ED2300F0AA51 /* Foundation.framework */; };
+		3FC3223E13C0ED2300F0AA51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC3223D13C0ED2300F0AA51 /* CoreGraphics.framework */; };
+		3FC3224413C0ED2300F0AA51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3224213C0ED2300F0AA51 /* InfoPlist.strings */; };
+		3FC3224713C0ED2300F0AA51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3224613C0ED2300F0AA51 /* main.m */; };
+		3FC3224A13C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3224913C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m */; };
+		3FC3224D13C0ED2300F0AA51 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3224B13C0ED2300F0AA51 /* MainWindow.xib */; };
+		3FC3225013C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3224F13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m */; };
+		3FC3225313C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3225113C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FC3223513C0ED2300F0AA51 /* UICurrencyTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICurrencyTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC3223913C0ED2300F0AA51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FC3223B13C0ED2300F0AA51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FC3223D13C0ED2300F0AA51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FC3224113C0ED2300F0AA51 /* UICurrencyTextField-Info.plist */ = {isa = PBXFileReference; path = "UICurrencyTextField-Info.plist"; sourceTree = "<group>"; };
+		3FC3224313C0ED2300F0AA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FC3224513C0ED2300F0AA51 /* UICurrencyTextField-Prefix.pch */ = {isa = PBXFileReference; path = "UICurrencyTextField-Prefix.pch"; sourceTree = "<group>"; };
+		3FC3224613C0ED2300F0AA51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FC3224813C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.h */ = {isa = PBXFileReference; path = UICurrencyTextFieldAppDelegate.h; sourceTree = "<group>"; };
+		3FC3224913C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICurrencyTextFieldAppDelegate.m; sourceTree = "<group>"; };
+		3FC3224C13C0ED2300F0AA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3FC3224E13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.h */ = {isa = PBXFileReference; path = UICurrencyTextFieldViewController.h; sourceTree = "<group>"; };
+		3FC3224F13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICurrencyTextFieldViewController.m; sourceTree = "<group>"; };
+		3FC3225213C0ED2300F0AA51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UICurrencyTextFieldViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC3223213C0ED2300F0AA51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3223A13C0ED2300F0AA51 /* UIKit.framework in Frameworks */,
+				3FC3223C13C0ED2300F0AA51 /* Foundation.framework in Frameworks */,
+				3FC3223E13C0ED2300F0AA51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC3222A13C0ED2300F0AA51 = {
+			isa = PBXGroup;
+			children = (
+				3FC3223F13C0ED2300F0AA51 /* UICurrencyTextField */,
+				3FC3223813C0ED2300F0AA51 /* Frameworks */,
+				3FC3223613C0ED2300F0AA51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC3223613C0ED2300F0AA51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3223513C0ED2300F0AA51 /* UICurrencyTextField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC3223813C0ED2300F0AA51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3223913C0ED2300F0AA51 /* UIKit.framework */,
+				3FC3223B13C0ED2300F0AA51 /* Foundation.framework */,
+				3FC3223D13C0ED2300F0AA51 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FC3223F13C0ED2300F0AA51 /* UICurrencyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3224813C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.h */,
+				3FC3224913C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m */,
+				3FC3224B13C0ED2300F0AA51 /* MainWindow.xib */,
+				3FC3224E13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.h */,
+				3FC3224F13C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m */,
+				3FC3225113C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib */,
+				3FC3224013C0ED2300F0AA51 /* Supporting Files */,
+			);
+			path = UICurrencyTextField;
+			sourceTree = "<group>";
+		};
+		3FC3224013C0ED2300F0AA51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FC3224113C0ED2300F0AA51 /* UICurrencyTextField-Info.plist */,
+				3FC3224213C0ED2300F0AA51 /* InfoPlist.strings */,
+				3FC3224513C0ED2300F0AA51 /* UICurrencyTextField-Prefix.pch */,
+				3FC3224613C0ED2300F0AA51 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC3223413C0ED2300F0AA51 /* UICurrencyTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC3225613C0ED2300F0AA51 /* Build configuration list for PBXNativeTarget "UICurrencyTextField" */;
+			buildPhases = (
+				3FC3223113C0ED2300F0AA51 /* Sources */,
+				3FC3223213C0ED2300F0AA51 /* Frameworks */,
+				3FC3223313C0ED2300F0AA51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICurrencyTextField;
+			productName = UICurrencyTextField;
+			productReference = 3FC3223513C0ED2300F0AA51 /* UICurrencyTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC3222C13C0ED2300F0AA51 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3FC3222F13C0ED2300F0AA51 /* Build configuration list for PBXProject "UICurrencyTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FC3222A13C0ED2300F0AA51;
+			productRefGroup = 3FC3223613C0ED2300F0AA51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC3223413C0ED2300F0AA51 /* UICurrencyTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC3223313C0ED2300F0AA51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3224413C0ED2300F0AA51 /* InfoPlist.strings in Resources */,
+				3FC3224D13C0ED2300F0AA51 /* MainWindow.xib in Resources */,
+				3FC3225313C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC3223113C0ED2300F0AA51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC3224713C0ED2300F0AA51 /* main.m in Sources */,
+				3FC3224A13C0ED2300F0AA51 /* UICurrencyTextFieldAppDelegate.m in Sources */,
+				3FC3225013C0ED2300F0AA51 /* UICurrencyTextFieldViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FC3224213C0ED2300F0AA51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC3224313C0ED2300F0AA51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FC3224B13C0ED2300F0AA51 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC3224C13C0ED2300F0AA51 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		3FC3225113C0ED2300F0AA51 /* UICurrencyTextFieldViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC3225213C0ED2300F0AA51 /* en */,
+			);
+			name = UICurrencyTextFieldViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FC3225413C0ED2300F0AA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3FC3225513C0ED2300F0AA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		3FC3225713C0ED2300F0AA51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UICurrencyTextField/UICurrencyTextField-Prefix.pch";
+				INFOPLIST_FILE = "UICurrencyTextField/UICurrencyTextField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FC3225813C0ED2300F0AA51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UICurrencyTextField/UICurrencyTextField-Prefix.pch";
+				INFOPLIST_FILE = "UICurrencyTextField/UICurrencyTextField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC3222F13C0ED2300F0AA51 /* Build configuration list for PBXProject "UICurrencyTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3225413C0ED2300F0AA51 /* Debug */,
+				3FC3225513C0ED2300F0AA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC3225613C0ED2300F0AA51 /* Build configuration list for PBXNativeTarget "UICurrencyTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC3225713C0ED2300F0AA51 /* Debug */,
+				3FC3225813C0ED2300F0AA51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC3222C13C0ED2300F0AA51 /* Project object */;
+}
