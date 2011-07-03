@@ -9,6 +9,7 @@
 #import "UICurrencyTextFieldViewController.h"
 
 @implementation UICurrencyTextFieldViewController
+@synthesize label,textfield;
 
 - (void)dealloc
 {
@@ -25,13 +26,14 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    textfield.defaultDelegate.delegate = self;
     [super viewDidLoad];
 }
-*/
+
 
 - (void)viewDidUnload
 {
@@ -43,7 +45,15 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return YES;
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+-(void)didGetToLimit{
+    NSLog(@"Textfiels chegou ao seu limite!");
+}
+
+-(void)didChangeVaule:(NSNumber *)value{
+    
+    self.label.text = [NSString stringWithFormat:@"%@",  value];
 }
 
 @end
