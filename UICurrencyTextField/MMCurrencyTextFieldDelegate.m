@@ -34,45 +34,50 @@
         NSLog(@"É LETRA!!!!!");
         return NO;
     }
-        NSString *cleanCentString = [[textField.text
+        NSString *centavos = [[textField.text
                                       componentsSeparatedByCharactersInSet:
                                      [[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
                                     componentsJoinedByString:@""];
-    NSLog(@"CleanCentString=%@",cleanCentString);
+    NSLog(@"CleanCentString=%@",centavos);
         //Checa o valor do inteiro resultante:
-        double centAmount = [cleanCentString doubleValue]  ;
+        double centAmount = [centavos doubleValue]  ;
         // checa o input
         if (string.length > 0)
         {
             // Digito adicionado;
-            centAmount = centAmount * 10 + [string doubleValue] ;
-            NSLog(@"CentAmount=%g", centAmount);
+            centAmount = centAmount * 10 + [string intValue] ;
+            NSLog(@"CentAmount=%f", centAmount);
         }
         else
         {
             // Digito removido
-            centAmount = centAmount / 10 ;        
-            parentField.value = [NSNumber numberWithDouble:(double)centAmount/pow(10,[currencyFormatter maximumFractionDigits])];
-            textField.text = [currencyFormatter stringFromNumber:parentField.value];
-            [self.delegate didChangeVaule:parentField.value];
+            centAmount = floor(centAmount / 10 );        
+            NSLog(@"Max=%f",pow(10,[currencyFormatter maximumFractionDigits]));
+            parentField.value = (double)centAmount/pow(10,[currencyFormatter maximumFractionDigits]);
+            textField.text = [currencyFormatter stringFromNumber:[NSNumber numberWithDouble:parentField.value]];
+            parentField.value = [[currencyFormatter numberFromString:textField.text]doubleValue];
+            [self.delegate textField:parentField didChangeVaule:parentField.value];
             return NO;
            
         }
     //Faz a string
-    NSLog(@"cleanCentStringVale:%@",cleanCentString);
-    NSLog(@"maxchars=%d tamanho string=%d", MAXCHARS, [cleanCentString length]);
-    if ([cleanCentString length]  >=MAXCHARS)
+    NSLog(@"cleanCentStringVale:%@",centavos);
+    NSLog(@"maxchars=%d tamanho string=%d", MAXCHARS, [centavos length]);
+    if ([centavos length]  >=MAXCHARS)
     {
         NSLog(@"Maximo atingido");
         [self.delegate didGetToLimit];
         return NO;
     }
     
-    cleanCentString =[NSMutableString stringWithFormat:@"%g",centAmount];
-    parentField.value = [ NSNumber numberWithDouble:(double)centAmount/pow(10,[currencyFormatter maximumFractionDigits])];
-
-       textField.text = [currencyFormatter stringFromNumber:parentField.value];
-    [self.delegate didChangeVaule:parentField.value];
+    
+       
+    centavos =[NSMutableString stringWithFormat:@"%F",centAmount];
+    NSLog(@"Centavos=%f",[centavos doubleValue]/pow(10,[currencyFormatter maximumFractionDigits]) );
+    
+       textField.text = [currencyFormatter stringFromNumber:[NSNumber numberWithDouble:[centavos doubleValue]/pow(10,[currencyFormatter maximumFractionDigits])]];
+       parentField.value = [[currencyFormatter numberFromString:textField.text]doubleValue];
+    [self.delegate textField:parentField didChangeVaule:parentField.value];
         
       
         return NO;

@@ -15,10 +15,10 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     
     [super initWithCoder:aDecoder];
-    self.value = [NSNumber numberWithDouble:0.0];
+    self.value = 0.0f;
     self.defaultDelegate=[MMCurrencyTextFieldDelegate currencyDelegate];
     self.delegate = defaultDelegate;
-    self.text = [defaultDelegate numberToString:value];
+    self.text = [defaultDelegate numberToString:[NSNumber numberWithDouble: value]];
     defaultDelegate.parentField=self;
     
     return self;

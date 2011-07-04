@@ -13,6 +13,6 @@
     
 }
 @property (nonatomic, retain)MMCurrencyTextFieldDelegate* defaultDelegate;
-@property (nonatomic, retain)NSNumber* value;
+@property (nonatomic, assign)double value;
 
 @end

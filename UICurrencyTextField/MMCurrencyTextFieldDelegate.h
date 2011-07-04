@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "MMCurrencyTextField.h"
-#define MAXCHARS 15
+#define MAXCHARS 12
 @protocol MMCurrencyDelegate
 
--(void)didChangeVaule:(NSNumber*)value;
+-(void)textField:(MMCurrencyTextField*)textField didChangeVaule:(double)value;
 -(void)didGetToLimit;
 
 @end

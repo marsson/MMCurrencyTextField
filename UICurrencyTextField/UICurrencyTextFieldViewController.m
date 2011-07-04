@@ -51,9 +51,9 @@
     NSLog(@"Textfiels chegou ao seu limite!");
 }
 
--(void)didChangeVaule:(NSNumber *)value{
-    
-    self.label.text = [NSString stringWithFormat:@"%@",  value];
+-(void)textField:(MMCurrencyTextField *)textField didChangeVaule:(double)value{
+
+    self.label.text = [NSString stringWithFormat:@"%f",  value];
 }
 
 @end
